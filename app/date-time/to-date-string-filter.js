@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
 * @description
@@ -15,5 +15,5 @@ Application.Filters.filter('toDateString', function() {
 		date = new Date(parseInt(timeStamp));
 		
 		return date.toLocaleDateString();
-	}
+	};
 });

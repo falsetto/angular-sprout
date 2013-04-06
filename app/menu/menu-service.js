@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
 * Defines the service that performs CRUD operations on menu items
@@ -12,7 +12,7 @@ Application.Services.factory('menu', function(configuration, $q, $rootScope, $ht
 			* @param {string} id the name of the single menu item to get.
 			* @return {Promise} Resolves to JSON array of menu items.
 			*/
-			get : function(id){
+			get : function(id) {
 				
 				var items, deferred;
 				
@@ -25,7 +25,7 @@ Application.Services.factory('menu', function(configuration, $q, $rootScope, $ht
 				    
 				    if(id){
 				    
-					    angular.forEach(data, function(obj, index){
+					    angular.forEach(data, function(obj, index) {
 						    if(obj.id === id){
 							    result = obj;
 						    }
@@ -42,7 +42,6 @@ Application.Services.factory('menu', function(configuration, $q, $rootScope, $ht
 				  
 				    console.error(data, status, headers, config);
 				    deferred.reject(data);
-				    
 				    
 				  });
 				

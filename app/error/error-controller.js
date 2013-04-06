@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-Application.Controllers.controller('error', ['$scope', function($scope){
+Application.Controllers.controller('error', ['$scope', function($scope) {
 	
 	
 }]);

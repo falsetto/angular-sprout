@@ -1,22 +1,22 @@
 # angular-sprout — The scalable angular seed app
 This project modifies the standard angular-seed project into a module pattern in which common 
-functionality is organized into the same directory. This approach seperates controllers, services, 
-filters and directives into their own files and strives to keep the application hierachy as flat 
+functionality is organized into the same directory. This approach separates controllers, services, 
+filters and directives into their own files and strives to keep the application hierarchy as flat 
 as possible.
 
 The app contains AngularJS libraries, test libraries and a bunch of scripts all preconfigured for
 instant web development gratification. Just clone the repo (or download the zip/tarball), start up
-our (or yours) webserver and you are ready to develop and test your application.
+our (or your) webserver and you are ready to develop and test your application.
 
 The sprout app doesn't do much, just shows how to wire controllers, views, services, filters and directives together. You can
-check it out by opening app/index.html in your browser (might not work file `file://` scheme in
+check it out by opening app/index.html in your browser (might not work with `file://` scheme in
 certain browsers, see note below).
 
 _Note: While angular is client-side-only technology and it's possible to create angular webapps that
 don't require a backend server at all, we recommend hosting the project files using a local
 webserver during development to avoid issues with security restrictions (sandbox) in browsers. The
 sandbox implementation varies between browsers, but quite often prevents things like cookies, xhr,
-etc to function properly when an html page is opened via `file://` scheme instead of `http://`._
+etc from functioning properly when an html page is opened via `file://` scheme instead of `http://`._
 
 
 ## How to use angular-sprout
@@ -60,7 +60,7 @@ Requires [node.js](http://nodejs.org/), Testacular (`sudo npm install -g testacu
 or remote browser.
 
 * start `scripts/test.sh` (on windows: `scripts\test.bat`)
-  * a browser will start and connect to the Testacular server (Chrome is default browser, others can be captured by loading the same url as the one in Chrome or by changing the `config/testacular.conf.js` file)
+  * a browser will start and connect to the Testacular server (Chrome is the default browser, others can be captured by loading the same url as the one in Chrome or by changing the `config/testacular.conf.js` file)
 * to run or re-run tests just change any of your source or test javascript files
 
 
@@ -104,7 +104,7 @@ fetch the changes and merge them into your project with git.
         error-partial.js					--> error view partial
       menu/      									--> menu module
         menu-controller.js				--> menu control controller
-        menu-partial.js						--> menue control partial
+        menu-partial.js						--> menu control partial
         menu-service.js						--> menu control service
         menu-item-directive.js		--> menu item control directive
         menu-item-template.html		--> menu item directive template
@@ -125,6 +125,6 @@ fetch the changes and merge them into your project with git.
       test.sh           					--> autotests unit tests with Testacular (*nix)
       web-server.js    					 	--> simple development webserver based on node.js
       
-    e2e/              						--> end to end tests are defined at the tob level as they are notbased on units of code.
+    e2e/              						--> end to end tests are defined at the top level as they are not based on units of code.
       home-e2e.html     					--> end-to-end tests for the home page
       layout-e2e.js       				--> end to end test to verify the layout
